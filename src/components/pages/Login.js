@@ -17,13 +17,13 @@ class Login extends Component {
     render() {
       return (
           <ScrollView style={styles.scroll}>
-            <Container>
+            {/* <Container>
                 <Button 
                     label="Forgot Login/Pass" 
                     styles={{ button: styles.alignRight, label: styles.label }} 
-                    // onPress={this.press.bind(this)} 
+                    onPress={this.press.bind(this)}
                 />
-            </Container>
+            </Container> */}
             <Container>
                 <Label text="Username or Email" />
                 <TextInput
@@ -50,6 +50,22 @@ class Login extends Component {
                     </View>
                 </Button>
             </Container>
+            <View style={styles.footer}>
+                <Container>
+                    <Button 
+                        label="Sign In"
+                        styles={{button: styles.primaryButton, label: styles.buttonWhiteText}} 
+                        // onPress={this.press.bind(this)} 
+                    />
+                </Container>
+                <Container>
+                    <Button 
+                        label="CANCEL"
+                        styles={{label: styles.buttonBlackText}} 
+                        // onPress={this.press.bind(this)} 
+                    />
+                </Container>
+            </View>
           </ScrollView>
           
       );
@@ -58,7 +74,7 @@ class Login extends Component {
 
 const styles = StyleSheet.create({
     scroll: {
-        backgroundColor: '#E1D7D8',
+        backgroundColor: '#000000',
         padding: 30,
         flexDirection: 'column'
     },
@@ -70,10 +86,40 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end'
     },
     textInput: {
-        height: 80,
+        height: 60,
         fontSize: 30,
-        backgroundColor: '#FFF'
+        backgroundColor: '#AAAA'
     },
+    transparentButton: {
+        marginTop: 30,
+        borderColor: '#3B5699',
+        borderWidth: 2
+    },
+    buttonBlueText: {
+        fontSize: 20,
+        color: '#3B5699'
+    },
+    buttonBigText: {
+        fontSize: 20,
+        fontWeight: 'bold'
+    },
+    inline: {
+        flexDirection: 'row'
+    },
+    buttonWhiteText: {
+        fontSize: 20,
+        color: '#FFF',
+    },
+    buttonBlackText: {
+        fontSize: 20,
+        color: '#595856'
+    },
+    primaryButton: {
+        backgroundColor: '#34A853'
+    },
+    footer: {
+       marginTop: 100
+    }
 });
 
 export default Login;
