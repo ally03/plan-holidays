@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+//import PropTypes from 'prop-types';
 import Dimensions from 'Dimensions';
 import {
   StyleSheet,
@@ -8,15 +8,14 @@ import {
   Animated,
   Easing,
   Image,
-  Alert,
   View,
 } from 'react-native';
-import {Actions, ActionConst} from 'react-native-router-flux';
+import { Actions, } from 'react-native-router-flux';
 
 import spinner from '../images/loading.gif';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
-const DEVICE_HEIGHT = Dimensions.get('window').height;
+//const DEVICE_HEIGHT = Dimensions.get('window').height;
 const MARGIN = 40;
 
 export default class ButtonSubmit extends Component {
@@ -35,7 +34,7 @@ export default class ButtonSubmit extends Component {
   _onPress() {
     if (this.state.isLoading) return;
 
-    this.setState({isLoading: true});
+    this.setState({ isLoading: true });
     Animated.timing(this.buttonAnimated, {
       toValue: 1,
       duration: 200,
@@ -48,7 +47,7 @@ export default class ButtonSubmit extends Component {
 
     setTimeout(() => {
       Actions.secondScreen();
-      this.setState({isLoading: false});
+      this.setState({ isLoading: false });
       this.buttonAnimated.setValue(0);
       this.growAnimated.setValue(0);
     }, 2300);
@@ -74,7 +73,7 @@ export default class ButtonSubmit extends Component {
 
     return (
       <View style={styles.container}>
-        <Animated.View style={{width: changeWidth}}>
+        <Animated.View style={{ width: changeWidth }}>
           <TouchableOpacity
             style={styles.button}
             onPress={this._onPress}
@@ -86,7 +85,7 @@ export default class ButtonSubmit extends Component {
             )}
           </TouchableOpacity>
           <Animated.View
-            style={[styles.circle, {transform: [{scale: changeScale}]}]}
+            style={[styles.circle, { transform: [{ scale: changeScale }] }]}
           />
         </Animated.View>
       </View>
