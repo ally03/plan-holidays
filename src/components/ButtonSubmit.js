@@ -82,6 +82,7 @@ export default class ButtonSubmit extends Component {
               <Image source={spinner} style={styles.image} />
             ) : (
               <Text style={styles.text}>LOGIN</Text>
+              
             )}
           </TouchableOpacity>
           <Animated.View

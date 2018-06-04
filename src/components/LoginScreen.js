@@ -5,10 +5,12 @@ import Form from './Form';
 import Wallpaper from './Wallpaper';
 import ButtonSubmit from './ButtonSubmit';
 import SignupSection from './SignupSection';
+import FbLogin from './fbLogin';
 
 
 
 export default class LoginScreen extends Component {
+  
   render() {
     return (
       <Wallpaper>
@@ -16,6 +18,7 @@ export default class LoginScreen extends Component {
         <Form />
         <SignupSection />
         <ButtonSubmit />
+        <FbLogin />
       </Wallpaper>
     );
   }
