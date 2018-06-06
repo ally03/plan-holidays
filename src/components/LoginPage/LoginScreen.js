@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
-import Logo from './Logo';
-import Form from './Form';
-import Wallpaper from './Wallpaper';
-import ButtonSubmit from './ButtonSubmit';
-import SignupSection from './SignupSection';
-import FbLogin from './fbLogin';
+import Logo from './LoginComp/Logo';
+import Form from './LoginComp/Form';
+import Wallpaper from './LoginComp/Wallpaper';
+import ButtonSubmit from './LoginComp/ButtonSubmit';
+import SignupSection from './LoginComp/SignupSection';
+import FbLogin from './LoginComp/fbLogin';
 
 
 
