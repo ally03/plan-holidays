@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Expo from 'expo';
 import {
   StyleSheet,
   View,
