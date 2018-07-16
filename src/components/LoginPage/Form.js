@@ -10,9 +10,9 @@ import {
 
 import UserInput from './UserInput';
 
-import usernameImg from '../../../Images/username.png';
-import passwordImg from '../../../Images/password.png';
-import eyeImg from '../../../Images/eye_black.png';
+import usernameImg from '../../Images/username.png';
+import passwordImg from '../../Images/password.png';
+import eyeImg from '../../Images/eye_black.png';
 
 export default class Form extends Component {
   constructor(props) {

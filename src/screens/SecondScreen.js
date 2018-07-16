@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
-import arrowImg from '../../Images/left-arrow.png';
+import arrowImg from '../Images/left-arrow.png';
 
 const SIZE = 40;
 

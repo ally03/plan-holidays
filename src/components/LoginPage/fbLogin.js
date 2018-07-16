@@ -10,7 +10,7 @@ import {
 //import { Button } from 'react-native-elements';
 //import Expo from 'expo';
 import { connect } from 'react-redux';
-import * as actions from '../../../actions';
+import * as actions from '../../actions';
 import { Actions } from 'react-native-router-flux';
 
 class FbLogin extends Component {
@@ -38,8 +38,8 @@ class FbLogin extends Component {
     
     _onPressButton() {
         this.props.facebookLogin()
-        //Actions.secondScreen();
-        //AsyncStorage.removeItem('fb_token');
+        Actions.secondScreen();
+        AsyncStorage.removeItem('fb_token');
     }
 
 

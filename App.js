@@ -3,7 +3,7 @@ import React from 'react';
 import store from './src/store';
 import { Provider } from 'react-redux';
 
-import Main from './src/components/Main';
+import Main from './src/Main';
 // import Header from './src/components/common/header';
 // import Login from './src/components/pages/Login';
 export default class App extends React.Component {

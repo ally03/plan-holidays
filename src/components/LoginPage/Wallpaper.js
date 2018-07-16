@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 //import Dimensions from 'Dimensions';
 import { StyleSheet, ImageBackground } from 'react-native';
 
-import bgSrc from '../../../Images/wallpaper.png';
+import bgSrc from '../../Images/wallpaper.png';
 
 export default class Wallpaper extends Component {
   render() {
